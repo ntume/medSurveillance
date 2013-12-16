@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    
+    <item
+        android:id="@+id/action_more"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/ic_more2">
+        <menu>
+            <item
+		        android:id="@+id/addfamily"
+		        android:orderInCategory="100"
+		        android:showAsAction="never"
+		        android:title="Add Family"/>		    
+		    
+        </menu>
+    </item>
+    
+</menu>

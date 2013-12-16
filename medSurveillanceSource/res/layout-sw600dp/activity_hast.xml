@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:validateform="http://schemas.android.com/apk/res/com.dataware.medsurveillance"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:fillViewport="true"
+  android:background="#ffffff">
+  <LinearLayout 
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:id="@+id/LoginRootView"
+  		android:orientation="vertical"
+  		android:background="#ffffff">
+ 
+  		<!-- HAST services Form -->
+		<LinearLayout
+		  		android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:background="#ffffff"
+			    android:orientation="vertical"
+			    android:padding="5dip" >
+			    
+		  <LinearLayout
+			     android:layout_width="fill_parent"
+			     android:layout_height="wrap_content"
+			     android:background="@drawable/artlist_selector"
+			     android:orientation="horizontal"
+			     android:padding="5dip" >
+				 
+				 <com.dataware.medsurveillance.includes.RobotoTextView
+					  app:typeface="roboto_condensed_bold"
+					  android:id="@+id/title"
+					  android:layout_height="wrap_content"
+					  android:gravity="center"
+					  android:text="HIV Information"
+					  android:visibility="visible"
+					  android:layout_width="fill_parent"
+					  android:textColor="#FFFFFFFF"
+					  android:background="#bb6008" 
+					  android:textSize="20dip"/>
+			 
+			</LinearLayout> 
+			
+		  <LinearLayout		  	
+				  	android:layout_width="fill_parent"
+				 	android:layout_height="wrap_content"
+				  	android:padding="5dip"
+				  	android:layout_gravity="center_horizontal"
+				  	android:orientation="horizontal"
+				  	android:weightSum="1.0" > 
+          
+	
+				  <com.dataware.medsurveillance.includes.RobotoTextView
+						app:typeface="roboto_condensed"
+						android:layout_width="0dp"
+				        android:layout_weight=".35"
+	        			android:layout_alignParentLeft="true"
+				  		android:layout_height="wrap_content"
+				  		android:textColor="#bb6008"
+				  		android:text="HIV Status Disclosed"
+				  		android:textSize="17dip"/>
+				  
+				  <ToggleButton
+				      android:id="@+id/hiv_status"
+				      android:layout_width="0dp"
+				        android:layout_weight=".65"
+	        			android:layout_alignParentRight="true"
+				      android:layout_height="wrap_content"
+				      android:layout_marginBottom="20dip"
+				      android:layout_marginTop="5dip"
+				      android:textOff="No"
+				      android:textOn="Yes" />
+		</LinearLayout>
+		
+		  <LinearLayout		  	
+				  	android:layout_width="fill_parent"
+				 	android:layout_height="wrap_content"
+				  	android:padding="5dip"
+				  	android:layout_gravity="center_horizontal"
+				  	android:orientation="horizontal"
+				  	android:weightSum="1.0" > 
+				  	
+				  <com.dataware.medsurveillance.includes.RobotoTextView
+						app:typeface="roboto_condensed"
+						android:layout_width="0dp"
+				        android:layout_weight=".35"
+	        			android:layout_alignParentLeft="true"
+				  		android:layout_height="wrap_content"
+				  		android:textColor="#bb6008"
+				  		android:textSize="17dip"
+				  		android:text="Knowledge about HIV"/>
+				  
+				  <ToggleButton
+				      android:id="@+id/hiv_knowledge"
+				      android:layout_width="0dp"
+				        android:layout_weight=".65"
+	        			android:layout_alignParentRight="true"
+				      android:layout_height="wrap_content"
+				      android:layout_marginBottom="20dip"
+				      android:layout_marginTop="5dip"
+				      android:textOff="No"
+				      android:textOn="Yes" />
+		  </LinearLayout>
+		  
+		  <LinearLayout
+			     android:layout_width="fill_parent"
+			     android:layout_height="wrap_content"
+			     android:background="@drawable/artlist_selector"
+			     android:orientation="horizontal"
+			     android:padding="5dip" >
+				 
+				 <com.dataware.medsurveillance.includes.RobotoTextView
+					  app:typeface="roboto_condensed_bold"
+					  android:id="@+id/title"
+					  android:layout_height="wrap_content"
+					  android:gravity="center"
+					  android:text="VCT Information"
+					  android:visibility="visible"
+					  android:layout_width="fill_parent"
+					  android:textColor="#FFFFFFFF"
+					  android:background="#bb6008" 
+					  android:textSize="20dip"/>
+			 
+		  </LinearLayout>
+		  
+		  <LinearLayout		  	
+				  	android:layout_width="fill_parent"
+				 	android:layout_height="wrap_content"
+				  	android:padding="5dip"
+				  	android:layout_gravity="center_horizontal"
+				  	android:orientation="horizontal"
+				  	android:weightSum="1.0" > 
+		  
+				  <com.dataware.medsurveillance.includes.RobotoTextView
+						app:typeface="roboto_condensed"
+						android:layout_width="0dp"
+				        android:layout_weight=".35"
+	        			android:layout_alignParentLeft="true"
+				  		android:layout_height="wrap_content"
+				  		android:textColor="#bb6008"
+				  		android:textSize="17dip"
+				  		android:text="VCT Period"/>
+				  <Spinner
+				        android:id="@+id/vct_period"
+				        android:layout_width="0dp"
+				        android:layout_weight=".65"
+	        			android:layout_alignParentRight="true"
+				        android:layout_height="wrap_content"
+				        android:layout_marginTop="5dip"
+				  		android:layout_marginBottom="20dip"
+				        android:entries="@array/vct"
+				        android:prompt="@string/vct_prompt" />
+		  </LinearLayout>
+		  
+		  <LinearLayout		  	
+				  	android:layout_width="fill_parent"
+				 	android:layout_height="wrap_content"
+				  	android:padding="5dip"
+				  	android:layout_gravity="center_horizontal"
+				  	android:orientation="horizontal"
+				  	android:weightSum="1.0" > 
+				  	
+				  <com.dataware.medsurveillance.includes.RobotoTextView
+						app:typeface="roboto_condensed"
+						android:layout_width="0dp"
+				        android:layout_weight=".35"
+	        			android:layout_alignParentLeft="true"
+				  		android:layout_height="wrap_content"
+				  		android:textColor="#bb6008"
+				  		android:textSize="17dip"
+				  		android:text="Motivated for VCT"/>
+				  
+				  <ToggleButton
+				      android:id="@+id/motivate_vct"
+				      android:layout_width="0dp"
+				        android:layout_weight=".65"
+	        			android:layout_alignParentRight="true"
+				      android:layout_height="wrap_content"
+				      android:layout_marginBottom="20dip"
+				      android:layout_marginTop="5dip"
+				      android:textOff="No"
+				      android:textOn="Yes" />
+		  </LinearLayout>
+		  <LinearLayout		  	
+				  	android:layout_width="fill_parent"
+				 	android:layout_height="wrap_content"
+				  	android:padding="5dip"
+				  	android:layout_gravity="center_horizontal"
+				  	android:orientation="horizontal"
+				  	android:weightSum="1.0" > 
+				  			
+				  <com.dataware.medsurveillance.includes.RobotoTextView
+						app:typeface="roboto_condensed"
+						android:layout_width="0dp"
+				        android:layout_weight=".35"
+	        			android:layout_alignParentLeft="true"
+				  		android:layout_height="wrap_content"
+				  		android:textColor="#bb6008"
+				  		android:textSize="17dip"
+				  		android:text="Referred for VCT"/>
+				  
+				  <ToggleButton
+				      android:id="@+id/referred_vct"
+				      android:layout_width="0dp"
+				        android:layout_weight=".65"
+	        			android:layout_alignParentRight="true"
+				      android:layout_height="wrap_content"
+				      android:layout_marginBottom="20dip"
+				      android:layout_marginTop="5dip"
+				      android:textOff="No"
+				      android:textOn="Yes" />
+		  </LinearLayout>
+		  
+		  <LinearLayout
+			     android:layout_width="fill_parent"
+			     android:layout_height="wrap_content"
+			     android:background="@drawable/artlist_selector"
+			     android:orientation="horizontal"
+			     android:padding="5dip" >
+				 
+				 <com.dataware.medsurveillance.includes.RobotoTextView
+					  app:typeface="roboto_condensed_bold"
+					  android:id="@+id/title"
+					  android:layout_height="wrap_content"
+					  android:gravity="center"
+					  android:text="TB Information"
+					  android:visibility="visible"
+					  android:layout_width="fill_parent"
+					  android:textColor="#FFFFFFFF"
+					  android:background="#bb6008" 
+					  android:textSize="20dip"/>
+			 
+		  </LinearLayout>
+		  
+		  <LinearLayout		  	
+				  	android:layout_width="fill_parent"
+				 	android:layout_height="wrap_content"
+				  	android:padding="5dip"
+				  	android:layout_gravity="center_horizontal"
+				  	android:orientation="horizontal"
+				  	android:weightSum="1.0" > 
+		  		
+				  <com.dataware.medsurveillance.includes.RobotoTextView
+						app:typeface="roboto_condensed"
+						android:layout_width="0dp"
+				        android:layout_weight=".35"
+	        			android:layout_alignParentLeft="true"
+				  		android:layout_height="wrap_content"
+				  		android:textColor="#bb6008"
+				  		android:textSize="17dip"
+				  		android:text="Signs for Tuberculosis"/>	
+				  						
+				  <ToggleButton
+				      android:id="@+id/tb_signs"
+				      android:layout_width="0dp"
+				      android:layout_weight=".65"
+	        	      android:layout_alignParentRight="true"
+				      android:layout_height="wrap_content"
+				      android:layout_marginBottom="20dip"
+				      android:layout_marginTop="5dip"
+				      android:textOff="No"
+				      android:textOn="Yes" />
+			</LinearLayout>
+			
+		  <LinearLayout		  	
+				  	android:layout_width="fill_parent"
+				 	android:layout_height="wrap_content"
+				  	android:padding="5dip"
+				  	android:layout_gravity="center_horizontal"
+				  	android:orientation="horizontal"
+				  	android:weightSum="1.0" > 
+				  		  
+				  <com.dataware.medsurveillance.includes.RobotoTextView
+						app:typeface="roboto_condensed"
+						android:layout_width="0dp"
+				        android:layout_weight=".35"
+	        			android:layout_alignParentLeft="true"
+				  		android:layout_height="wrap_content"
+				  		android:textColor="#bb6008"
+				  		android:textSize="17dip"
+				  		android:text="Type of Tuberculosis"/>
+				  
+				  <Spinner
+				        android:id="@+id/tb"
+				        android:layout_width="0dp"
+				      android:layout_weight=".65"
+	        	      android:layout_alignParentRight="true"
+				        android:layout_height="wrap_content"
+				        android:layout_marginTop="5dip"
+				  		android:layout_marginBottom="20dip"
+				        android:entries="@array/tb"
+				        android:prompt="@string/tb_prompt" />
+		  </LinearLayout>
+		  <LinearLayout		  	
+				  	android:layout_width="fill_parent"
+				 	android:layout_height="wrap_content"
+				  	android:padding="5dip"
+				  	android:layout_gravity="center_horizontal"
+				  	android:orientation="horizontal"
+				  	android:weightSum="1.0" > 
+				  	
+				  <com.dataware.medsurveillance.includes.RobotoTextView
+						app:typeface="roboto_condensed"
+						android:layout_width="0dp"
+				        android:layout_weight=".35"
+	        			android:layout_alignParentLeft="true"
+				  		android:layout_height="wrap_content"
+				  		android:textColor="#bb6008"
+				  		android:textSize="17dip"
+				  		android:text="Treatment"/>
+				  
+				  <Spinner
+				        android:id="@+id/treatment"
+				        android:layout_width="0dp"
+				      android:layout_weight=".65"
+	        	      android:layout_alignParentRight="true"
+				        android:layout_height="wrap_content"
+				        android:layout_marginTop="5dip"
+				  		android:layout_marginBottom="20dip"
+				        android:entries="@array/treatment"
+				        android:prompt="@string/treatment_prompt" />
+		  </LinearLayout>
+		  <LinearLayout		  	
+				  	android:layout_width="fill_parent"
+				 	android:layout_height="wrap_content"
+				  	android:padding="5dip"
+				  	android:layout_gravity="center_horizontal"
+				  	android:orientation="horizontal"
+				  	android:weightSum="1.0" > 
+				  	
+				  <com.dataware.medsurveillance.includes.RobotoTextView
+						app:typeface="roboto_condensed"
+						android:layout_width="0dp"
+				        android:layout_weight=".35"
+	        			android:layout_alignParentLeft="true"
+				  		android:layout_height="wrap_content"
+				  		android:textColor="#bb6008"
+				  		android:textSize="17dip"
+				  		android:text="Treatment Compliance"/>
+				  
+				  <ToggleButton
+				      android:id="@+id/compliance"
+				      android:layout_width="0dp"
+				      android:layout_weight=".65"
+	        	      android:layout_alignParentRight="true"
+				      android:layout_height="wrap_content"
+				      android:layout_marginBottom="20dip"
+				      android:layout_marginTop="5dip"
+				      android:textOff="No"
+				      android:textOn="Yes" />
+		  </LinearLayout>
+		  <LinearLayout		  	
+				  	android:layout_width="fill_parent"
+				 	android:layout_height="wrap_content"
+				  	android:padding="5dip"
+				  	android:layout_gravity="center_horizontal"
+				  	android:orientation="horizontal"
+				  	android:weightSum="1.0" > 
+				  	
+				  <com.dataware.medsurveillance.includes.RobotoTextView
+						app:typeface="roboto_condensed"
+						android:layout_width="0dp"
+				        android:layout_weight=".35"
+	        			android:layout_alignParentLeft="true"
+				  		android:layout_height="wrap_content"
+				  		android:textColor="#bb6008"
+				  		android:textSize="17dip"
+				  		android:text="Cured"/>
+				  
+				  <ToggleButton
+				      android:id="@+id/cured"
+				      android:layout_width="0dp"
+				      android:layout_weight=".65"
+	        	      android:layout_alignParentRight="true"
+				      android:layout_height="wrap_content"
+				      android:layout_marginBottom="20dip"
+				      android:layout_marginTop="5dip"
+				      android:textOff="No"
+				      android:textOn="Yes" />
+		  </LinearLayout>
+		  		  		  		  
+		  <!--  Error message -->
+          <com.dataware.medsurveillance.includes.RobotoTextView
+				app:typeface="roboto_condensed"
+				android:id="@+id/demo_error"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#e30000"
+                android:padding="10dip"
+                android:textStyle="bold"/>
+          
+		  <!-- Save button -->	
+		   <RelativeLayout		  	
+			  	android:layout_width="fill_parent"
+			 	android:layout_height="wrap_content"
+			  	android:padding="10dip"
+			  	android:layout_gravity="center_horizontal">
+			  		  
+				  <Button android:text="Save" 
+				      android:id="@+id/btnsave" 
+				      android:layout_marginTop="10dip"
+				      
+				      android:layout_height="wrap_content"
+				      android:layout_width="250dip"
+				      android:background="@drawable/buttonyellow" 
+				      android:layout_alignParentRight="true"		     
+				      style="@style/Buttondual">		     
+				  </Button>	  
+				  
+				  <Button android:text="Rest" 
+				      android:id="@+id/btnreset" 
+				      android:layout_alignParentLeft="true"
+				      android:layout_marginTop="10dip"
+				      android:layout_height="wrap_content"
+				      android:layout_width="250dip"
+				      android:background="@drawable/buttonred" 
+				      style="@style/Buttondual">		     
+				  </Button>
+			  
+			</RelativeLayout>
+	
+		
+		    
+		</LinearLayout>
+	
+  		
+  </LinearLayout>
+</ScrollView>

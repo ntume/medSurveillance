@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:validateform="http://schemas.android.com/apk/res/com.dataware.medsurveillance"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:fillViewport="true"
+  android:background="#ffffff">
+  <LinearLayout 
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:id="@+id/LoginRootView"
+  		android:orientation="vertical"
+  		android:background="#ffffff">
+  		 		
+  		<!-- Anthropometric Measurements Form -->
+  		
+		<LinearLayout
+		  		android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:background="#ffffff"
+			    android:orientation="vertical"
+			    android:padding="5dip">
+			    
+		    	<LinearLayout
+				     android:layout_width="fill_parent"
+				     android:layout_height="wrap_content"
+				     android:background="@drawable/artlist_selector"
+				     android:orientation="horizontal"
+				     android:padding="5dip" >
+					 
+					 <com.dataware.medsurveillance.includes.RobotoTextView
+						  app:typeface="roboto_condensed_bold"
+						  android:id="@+id/title"
+						  android:layout_height="wrap_content"
+						  android:gravity="center"
+						  android:text="Vital Stats"
+						  android:visibility="visible"
+						  android:layout_width="fill_parent"
+						  android:textColor="#FFFFFFFF"
+						  android:background="#bb6008" 
+						  android:textSize="20dip"/>
+			 
+				</LinearLayout>
+	
+		  		<com.dataware.medsurveillance.includes.RobotoTextView
+				        app:typeface="roboto_condensed"
+				        android:layout_width="fill_parent"
+				        android:paddingTop="10dip"
+				  		android:layout_height="wrap_content"
+				  		android:textColor="#bb6008"
+				  		android:textSize="18sp"
+				  		android:text="Systolic Measurements"/>
+				   
+				   <LinearLayout		  	
+					  	android:layout_width="fill_parent"
+					 	android:layout_height="wrap_content"
+					  	android:padding="5dip"
+					  	android:layout_gravity="center_horizontal"
+					  	android:orientation="horizontal"
+					  	android:weightSum="1.0" >
+				   
+						   <com.andreabaccega.widget.FormEditText
+						        validateform:testType="nocheck"
+						        validateform:emptyErrorString="@string/validate_username"
+						        android:id="@+id/systolic"
+						        android:maxLength="8"
+						        android:layout_width="0dp"
+						  		android:layout_height="wrap_content"
+						  		android:layout_weight=".35"
+						  		android:layout_marginTop="10dip"
+						  		android:layout_marginBottom="20dip"
+						  		android:singleLine="true"
+						  		android:layout_alignParentLeft="true"
+						  		android:text="0 mmHg"
+						  		android:textColor="#000000"/>
+						   
+						   <SeekBar								
+								android:layout_width="0dp"
+								android:layout_height="wrap_content"
+								android:layout_weight=".65"
+								android:gravity="center"
+								android:layout_gravity="center"
+								android:layout_alignParentRight="true"
+								android:max="200"
+								android:progress="1"
+								android:secondaryProgress="0"
+								android:id="@+id/slidersystolic"
+								android:progressDrawable="@xml/progress_drawable"
+								android:thumb="@xml/thumb_drawable"
+								android:layout_marginTop="5dip"/>
+		    
+		    
+		           </LinearLayout>
+
+		  <com.dataware.medsurveillance.includes.RobotoTextView
+				        app:typeface="roboto_condensed"
+				        android:layout_width="fill_parent"
+				        android:paddingTop="10dip"
+				  		android:layout_height="wrap_content"
+				  		android:textColor="#bb6008"
+				  		android:textSize="18sp"
+				  		android:text="Diastolic Measurements"/>
+				   
+				   <LinearLayout		  	
+					  	android:layout_width="fill_parent"
+					 	android:layout_height="wrap_content"
+					  	android:padding="5dip"
+					  	android:layout_gravity="center_horizontal"
+					  	android:orientation="horizontal"
+					  	android:weightSum="1.0" >
+				   
+						   <com.andreabaccega.widget.FormEditText
+						        validateform:testType="nocheck"
+						        validateform:emptyErrorString="@string/validate_username"
+						        android:id="@+id/diastolic"
+						        android:maxLength="8"
+						        android:layout_width="0dp"
+						  		android:layout_height="wrap_content"
+						  		android:layout_weight=".35"
+						  		android:layout_marginTop="10dip"
+						  		android:layout_marginBottom="20dip"
+						  		android:singleLine="true"
+						  		android:layout_alignParentLeft="true"
+						  		android:text="0 mmHg"
+						  		android:textColor="#000000"/>
+						   
+						   <SeekBar								
+								android:layout_width="0dp"
+								android:layout_height="wrap_content"
+								android:layout_weight=".65"
+								android:gravity="center"
+								android:layout_gravity="center"
+								android:layout_alignParentRight="true"
+								android:max="200"
+								android:progress="1"
+								android:secondaryProgress="0"
+								android:id="@+id/sliderdiastolic"
+								android:progressDrawable="@xml/progress_drawable"
+								android:thumb="@xml/thumb_drawable"
+								android:layout_marginTop="5dip"/>
+		    
+		    
+		           </LinearLayout>
+		  
+		  <com.dataware.medsurveillance.includes.RobotoTextView
+		        app:typeface="roboto_condensed"
+		        android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:textColor="#bb6008"
+		        android:textSize="17dip"
+		  		android:text="Pulse"/>
+		  
+		  <com.andreabaccega.widget.FormEditText
+		        validateform:testType="nocheck"
+		        validateform:emptyErrorString="fill pulse" 
+		        android:id="@+id/pulse"
+		        android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:layout_marginTop="5dip"
+		  		android:layout_marginBottom="20dip"
+		  		android:singleLine="true"/>
+		  
+		  <com.dataware.medsurveillance.includes.RobotoTextView
+				        app:typeface="roboto_condensed"
+				        android:layout_width="fill_parent"
+				        android:paddingTop="10dip"
+				  		android:layout_height="wrap_content"
+				  		android:textColor="#bb6008"
+				  		android:textSize="18sp"
+				  		android:text="Respiratory Rate"/>
+				   
+				   <LinearLayout		  	
+					  	android:layout_width="fill_parent"
+					 	android:layout_height="wrap_content"
+					  	android:padding="5dip"
+					  	android:layout_gravity="center_horizontal"
+					  	android:orientation="horizontal"
+					  	android:weightSum="1.0" >
+				   
+						   <com.andreabaccega.widget.FormEditText
+						        validateform:testType="nocheck"
+						        validateform:emptyErrorString="Fill respiratory"
+						        android:id="@+id/respiratory"
+						        android:maxLength="7"
+						        android:layout_width="0dp"
+						  		android:layout_height="wrap_content"
+						  		android:layout_weight=".35"
+						  		android:layout_marginTop="10dip"
+						  		android:layout_marginBottom="20dip"
+						  		android:singleLine="true"
+						  		android:layout_alignParentLeft="true"
+						  		android:text="0 ipm"
+						  		android:textColor="#000000"/>
+						   
+						   <SeekBar								
+								android:layout_width="0dp"
+								android:layout_height="wrap_content"
+								android:layout_weight=".65"
+								android:gravity="center"
+								android:layout_gravity="center"
+								android:layout_alignParentRight="true"
+								android:max="100"
+								android:progress="1"
+								android:secondaryProgress="0"
+								android:id="@+id/sliderrespiratory"
+								android:progressDrawable="@xml/progress_drawable"
+								android:thumb="@xml/thumb_drawable"
+								android:layout_marginTop="5dip"/>
+		    
+		    
+		           </LinearLayout>
+		  		
+		  <com.dataware.medsurveillance.includes.RobotoTextView
+		        app:typeface="roboto_condensed"
+		        android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:textColor="#bb6008"
+		        android:textSize="17dip"
+		  		android:text="Temperature"/>
+		  
+		  <com.andreabaccega.widget.FormEditText
+		        validateform:testType="nocheck"
+		        validateform:emptyErrorString="fill temperature" 
+		        android:id="@+id/temperature"
+		        android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:layout_marginTop="5dip"
+		  		android:layout_marginBottom="20dip"
+		  		android:singleLine="true"/>
+		  		
+		  <com.dataware.medsurveillance.includes.RobotoTextView
+		        app:typeface="roboto_condensed"
+		        android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:textColor="#bb6008"
+		        android:textSize="17dip"
+		  		android:text="BG (Mmol/L)"/>
+		  					
+		  <Spinner
+		        android:id="@+id/bg"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="5dip"
+		  		android:layout_marginBottom="20dip"
+		        android:entries="@array/bg"
+		        android:prompt="@string/bg_prompt" />
+		  
+		  <com.dataware.medsurveillance.includes.RobotoTextView
+		        app:typeface="roboto_condensed"
+		        android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:textColor="#bb6008"
+		        android:textSize="17dip"
+		  		android:text="HB (G/dL)"/>
+		  
+		  <Spinner
+		        android:id="@+id/hb"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="5dip"
+		  		android:layout_marginBottom="20dip"
+		        android:entries="@array/hb"
+		        android:prompt="@string/hb_prompt" />
+		  
+		  <com.dataware.medsurveillance.includes.RobotoTextView
+		        app:typeface="roboto_condensed"
+		        android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:textColor="#bb6008"
+		        android:textSize="17dip"
+		  		android:text="Urine Analysis"/>
+		  
+		  <com.andreabaccega.widget.FormEditText
+		        validateform:testType="nocheck"
+		        validateform:emptyErrorString="fill Urine Analysis" 
+		        android:id="@+id/urine"
+		        android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:layout_marginTop="5dip"
+		  		android:layout_marginBottom="20dip"
+		  		android:singleLine="true"/>
+		  
+		  <LinearLayout
+			     android:layout_width="fill_parent"
+			     android:layout_height="wrap_content"
+			     android:background="@drawable/artlist_selector"
+			     android:orientation="horizontal"
+			     android:padding="5dip" >
+				 
+				 <com.dataware.medsurveillance.includes.RobotoTextView
+					  app:typeface="roboto_condensed_bold"
+					  android:id="@+id/title"
+					  android:layout_height="wrap_content"
+					  android:gravity="center"
+					  android:text="Physical Stats"
+					  android:visibility="visible"
+					  android:layout_width="fill_parent"
+					  android:textColor="#FFFFFFFF"
+					  android:background="#bb6008" 
+					  android:textSize="20dip"/>
+			 
+			</LinearLayout>
+		  
+		  <com.dataware.medsurveillance.includes.RobotoTextView
+		        app:typeface="roboto_condensed"
+		        android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:textColor="#bb6008"
+		        android:textSize="17dip"
+		        android:paddingTop="10dip"
+		  		android:text="Weight"/>
+		  
+		  <com.andreabaccega.widget.FormEditText
+		        validateform:testType="nocheck"
+		        validateform:emptyErrorString="fill weight"  
+		        android:id="@+id/weight"
+		        android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:layout_marginTop="5dip"
+		  		android:layout_marginBottom="20dip"
+		  		android:singleLine="true"/>
+		  
+		  <com.dataware.medsurveillance.includes.RobotoTextView
+		        app:typeface="roboto_condensed"
+		        android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:textColor="#bb6008"
+		        android:textSize="17dip"
+		  		android:text="Height"/>
+		  
+		  <com.andreabaccega.widget.FormEditText
+		        validateform:testType="nocheck"
+		        validateform:emptyErrorString="fill Height" 
+		        android:id="@+id/height"
+		        android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:layout_marginTop="5dip"
+		  		android:layout_marginBottom="20dip"
+		  		android:singleLine="true"/>
+		  
+		  <com.dataware.medsurveillance.includes.RobotoTextView
+		        app:typeface="roboto_condensed"
+		        android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:textColor="#bb6008"
+		        android:textSize="17dip"
+		  		android:text="Body Mass Index"/>
+		  
+		  <com.andreabaccega.widget.FormEditText
+		        validateform:testType="nocheck"
+		        validateform:emptyErrorString="fill BMI" 
+		        android:id="@+id/bmi"
+		        android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:layout_marginTop="5dip"
+		  		android:layout_marginBottom="20dip"
+		  		android:singleLine="true"/>		  
+		  		  
+		  <!--  Error message -->
+          <com.dataware.medsurveillance.includes.RobotoTextView
+		        app:typeface="roboto_condensed"
+		        android:id="@+id/demo_error"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#e30000"
+                android:padding="10dip"
+                android:textStyle="bold"/>
+          
+		  <!-- Save button -->	
+		  <RelativeLayout		  	
+			  	android:layout_width="fill_parent"
+			 	android:layout_height="wrap_content"
+			  	android:padding="10dip"
+			  	android:layout_gravity="center_horizontal">
+			  		  
+				  <Button android:text="Save" 
+				      android:id="@+id/btnsave" 
+				      android:layout_marginTop="10dip"
+				      
+				      android:layout_height="wrap_content"
+				      android:layout_width="150dip"
+				      android:background="@drawable/buttonyellow" 
+				      android:layout_alignParentRight="true"		     
+				      style="@style/Buttondual">		     
+				  </Button>	  
+				  
+				  <Button android:text="Rest" 
+				      android:id="@+id/btnreset" 
+				      android:layout_alignParentLeft="true"
+				      android:layout_marginTop="10dip"
+				      android:layout_height="wrap_content"
+				      android:layout_width="150dip"
+				      android:background="@drawable/buttonred" 
+				      style="@style/Buttondual">		     
+				  </Button>
+			  
+			</RelativeLayout>
+	
+		
+		    
+		</LinearLayout>
+	
+  		
+  </LinearLayout>
+</ScrollView>

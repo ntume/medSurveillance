@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item
+		android:id="@+id/directionList"
+		android:orderInCategory="100"
+		android:showAsAction="never"
+		android:title="View Direction List"/>
+	
+	<item
+		android:id="@+id/navigation"
+		android:orderInCategory="100"
+		android:showAsAction="never"
+		android:title="Turn by Turn navigation"/>
+			
+	<item
+		android:id="@+id/instrustions"
+		android:orderInCategory="100"
+		android:showAsAction="never"
+		android:title="Tips and Instructions"/>	
+		
+	<item
+		android:id="@+id/legal"
+		android:orderInCategory="100"
+		android:showAsAction="never"
+		android:title="Legal Notice"/>
+
+</menu>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- ifRoom attribute checks the space 
+           available in the action bar. If space is available,
+           the menu is placed on the Action Bar.
+    -->
+    <item android:id="@+id/pagerefresh"
+          android:title="Refresh"
+          android:icon="@drawable/ic_refresh2"
+          android:showAsAction="ifRoom" />
+     <item android:id="@+id/viewmap"
+          android:title="Map"
+          android:icon="@drawable/ic_map"
+          android:showAsAction="ifRoom" /> 
+    <item android:id="@+id/pageinfo"
+          android:title="Info"
+          android:icon="@drawable/top_menu_info"
+          android:showAsAction="ifRoom" /> 
+   </menu>

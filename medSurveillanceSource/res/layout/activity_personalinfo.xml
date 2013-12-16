@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:validateform="http://schemas.android.com/apk/res/com.dataware.medsurveillance"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:fillViewport="true"
+  android:background="#ffffff">
+   <LinearLayout 
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:id="@+id/LoginRootView"
+  		android:orientation="vertical"
+  		android:background="#ffffff">
+  		
+  		<!-- Personal DEtails Form -->
+		<LinearLayout		 
+			     android:layout_width="fill_parent"
+			     android:layout_height="wrap_content"
+			     android:background="#ffffff"
+			     android:orientation="vertical"
+			     android:padding="5dip" >
+	
+		  <com.dataware.medsurveillance.includes.RobotoTextView
+				app:typeface="roboto_condensed"
+		      	android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:textColor="#bb6008"
+		  		android:text="ID Number"
+		  		android:textSize="17dip"/>
+		  		  
+		  <com.andreabaccega.widget.FormEditText
+		        validateform:testType="nocheck"
+		        validateform:emptyErrorString="fill The ID / Passport Number" 
+		      	android:id="@+id/idNum"
+		        android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:layout_marginTop="5dip"
+		  		android:layout_marginBottom="20dip"
+		  		android:singleLine="true"/>
+
+		  <com.dataware.medsurveillance.includes.RobotoTextView
+				app:typeface="roboto_condensed" 
+		        android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:textColor="#bb6008"
+		  		android:text="Full Name"
+		  		android:textSize="17dip"/>
+		  
+		  <com.andreabaccega.widget.FormEditText
+		        validateform:testType="nocheck"
+		        validateform:emptyErrorString="fill his/her full name"  
+		      	android:id="@+id/fullname"
+		        android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:layout_marginTop="5dip"
+		  		android:layout_marginBottom="20dip"
+		  		android:singleLine="true"/>
+		  
+		  <com.dataware.medsurveillance.includes.RobotoTextView
+				app:typeface="roboto_condensed"  
+		        android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:textColor="#bb6008"
+		  		android:text="Gender"
+		  		android:textSize="17dip"/>
+		  
+		  <Spinner
+		        android:id="@+id/gender"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="5dip"
+		  		android:layout_marginBottom="20dip"
+		        android:entries="@array/gender"
+		        android:prompt="@string/gender_prompt" />
+		  
+		  
+		  <LinearLayout
+			     android:layout_width="fill_parent"
+			     android:layout_height="wrap_content"
+			     android:background="@drawable/artlist_selector"
+			     android:orientation="horizontal"
+			     android:padding="5dip" >
+				 
+				 <com.dataware.medsurveillance.includes.RobotoTextView
+					  app:typeface="roboto_condensed_bold"
+					  android:id="@+id/title"
+					  android:layout_height="wrap_content"
+					  android:gravity="center"
+					  android:text="Health Information"
+					  android:visibility="visible"
+					  android:layout_width="fill_parent"
+					  android:textColor="#FFFFFFFF"
+					  android:background="#bb6008" 
+					  android:textSize="20dip"/>
+			 
+			</LinearLayout>
+		  
+		  <com.dataware.medsurveillance.includes.RobotoTextView
+		        app:typeface="roboto_condensed" 
+		      	android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:textColor="#bb6008"
+		  		android:layout_marginTop="10dip"
+		  		android:text="Mental Health Needs Identified"
+		  		android:textSize="17dip"/>
+		  
+		  <ToggleButton
+		      android:id="@+id/mental"
+		      android:layout_width="fill_parent"
+		      android:layout_height="wrap_content"
+		      android:layout_marginBottom="20dip"
+		      android:layout_marginTop="5dip"
+		      android:textOff="No"
+		      android:textOn="Yes" />
+		  
+		  <com.dataware.medsurveillance.includes.RobotoTextView
+		        app:typeface="roboto_condensed"  
+		      	android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:textColor="#bb6008"
+		  		android:text="Mental Health Patient on Treatment"
+		  		android:textSize="17dip"/>
+		  
+		  <ToggleButton
+		      android:id="@+id/mentaltreat"
+		      android:layout_width="fill_parent"
+		      android:layout_height="wrap_content"
+		      android:layout_marginBottom="20dip"
+		      android:layout_marginTop="5dip"
+		      android:textOff="No"
+		      android:textOn="Yes" />
+		   
+		  <com.dataware.medsurveillance.includes.RobotoTextView
+				app:typeface="roboto_condensed"  
+		      	android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:textColor="#bb6008"
+		  		android:text="Personal Medical History"
+		  		android:textSize="17dip"/>
+		  
+		  <com.andreabaccega.widget.FormEditText
+		        validateform:testType="nocheck"
+		        validateform:emptyErrorString="fill medical history"  
+		      	android:id="@+id/medic_hist"
+		        android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:layout_marginTop="5dip"
+		  		android:layout_marginBottom="20dip"
+		  		android:singleLine="true"/>
+		  
+		  <com.dataware.medsurveillance.includes.RobotoTextView
+				app:typeface="roboto_condensed"  
+				android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:textSize="17dip"
+		  		android:textColor="#bb6008"
+		  		android:text="Surgical History"/>
+		  
+		  <com.andreabaccega.widget.FormEditText
+		        validateform:testType="nocheck"
+		        validateform:emptyErrorString="fill surgical history"  
+		      	android:id="@+id/surg_hist"
+		        android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:layout_marginTop="5dip"
+		  		android:layout_marginBottom="20dip"
+		  		android:singleLine="true"/>
+		  
+		  
+		  <LinearLayout
+			     android:layout_width="fill_parent"
+			     android:layout_height="wrap_content"
+			     android:background="@drawable/artlist_selector"
+			     android:orientation="horizontal"
+			     android:padding="5dip" >
+				 
+				 <com.dataware.medsurveillance.includes.RobotoTextView
+					  app:typeface="roboto_condensed_bold"
+					  android:id="@+id/title"
+					  android:layout_height="wrap_content"
+					  android:gravity="center"
+					  android:text="Education / Employment"
+					  android:visibility="visible"
+					  android:layout_width="fill_parent"
+					  android:textColor="#FFFFFFFF"
+					  android:background="#bb6008" 
+					  android:textSize="20dip"/>
+			 
+			</LinearLayout>
+		  
+		  <com.dataware.medsurveillance.includes.RobotoTextView
+		        app:typeface="roboto_condensed"   
+		      	android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:textColor="#bb6008"
+		  		android:textSize="17dip"
+		  		android:layout_marginTop="10dip"
+		  		android:text="Highest Educational Level"/>
+		  
+		  <Spinner
+		        android:id="@+id/educ"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="5dip"
+		  		android:layout_marginBottom="20dip"
+		        android:entries="@array/female_educ"
+		        android:prompt="@string/female_educ_prompt" />
+		  
+		  <com.dataware.medsurveillance.includes.RobotoTextView
+				app:typeface="roboto_condensed" 
+		      	android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:textColor="#bb6008"
+		  		android:text="Litracy"
+		  		android:textSize="17dip"/>
+		  
+		  <ToggleButton
+		      android:id="@+id/litrate"
+		      android:layout_width="fill_parent"
+		      android:layout_height="wrap_content"
+		      android:layout_marginBottom="20dip"
+		      android:layout_marginTop="5dip"
+		      android:textOff="No"
+		      android:textOn="Yes" />
+		  
+		  <com.dataware.medsurveillance.includes.RobotoTextView
+				app:typeface="roboto_condensed"  
+		      	android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:textColor="#bb6008"
+		  		android:text="Employment Status"
+		  		android:textSize="17dip"/>
+		  
+		  <Spinner
+		        android:id="@+id/emp"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="5dip"
+		  		android:layout_marginBottom="20dip"
+		        android:entries="@array/employment"
+		        android:prompt="@string/employment_prompt" />
+		 
+		  
+		  <LinearLayout
+			     android:layout_width="fill_parent"
+			     android:layout_height="wrap_content"
+			     android:background="@drawable/artlist_selector"
+			     android:orientation="horizontal"
+			     android:padding="5dip" >
+				 
+				 <com.dataware.medsurveillance.includes.RobotoTextView
+					  app:typeface="roboto_condensed_bold"
+					  android:id="@+id/title"
+					  android:layout_height="wrap_content"
+					  android:gravity="center"
+					  android:text="Lifestyle"
+					  android:visibility="visible"
+					  android:layout_width="fill_parent"
+					  android:textColor="#FFFFFFFF"
+					  android:background="#bb6008" 
+					  android:textSize="20dip"/>
+			 
+			</LinearLayout>
+		  
+		  
+		  <com.dataware.medsurveillance.includes.RobotoTextView
+		        app:typeface="roboto_condensed"
+		        android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:textColor="#bb6008"
+		  		android:layout_marginTop="10dip"
+		  		android:textSize="17dip"
+		  		android:text="Smoker"/>
+		  
+		  <ToggleButton
+		      android:id="@+id/smoker"
+		      android:layout_width="fill_parent"
+		      android:layout_height="wrap_content"
+		      android:layout_marginBottom="20dip"
+		      android:layout_marginTop="5dip"
+		      android:textOff="No"
+		      android:textOn="Yes" />
+		  
+		  <com.dataware.medsurveillance.includes.RobotoTextView
+		        app:typeface="roboto_condensed"
+		        android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:textColor="#bb6008"
+		  		android:textSize="17dip"
+		  		android:text="Alcohol Consumption"/>
+		  
+		  <ToggleButton
+		      android:id="@+id/alcohol"
+		      android:layout_width="fill_parent"
+		      android:layout_height="wrap_content"
+		      android:layout_marginBottom="20dip"
+		      android:layout_marginTop="5dip"
+		      android:textOff="No"
+		      android:textOn="Yes" />
+		  
+		  <com.dataware.medsurveillance.includes.RobotoTextView
+		        app:typeface="roboto_condensed"
+		        android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:textColor="#bb6008"
+		  		android:textSize="17dip"
+		  		android:text="Care Giver at Home"/>
+		  <Spinner
+		        android:id="@+id/caregiver"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="5dip"
+		  		android:layout_marginBottom="20dip"
+		        android:entries="@array/caregiver"
+		        android:prompt="@string/caregiver_prompt" />	  
+		  
+		  <com.dataware.medsurveillance.includes.RobotoTextView
+		        app:typeface="roboto_condensed"
+		        android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:textColor="#bb6008"
+		  		android:textSize="17dip"
+		  		android:text="Domestic Violence"/>
+		  <Spinner
+		        android:id="@+id/dom_violence"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="5dip"
+		  		android:layout_marginBottom="20dip"
+		        android:entries="@array/domestic_violence"
+		        android:prompt="@string/domestic_violence_prompt" />
+		  
+		  <!--  Error message -->
+          <com.dataware.medsurveillance.includes.RobotoTextView
+		        	app:typeface="roboto_condensed"
+		        	 android:id="@+id/demo_error"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#e30000"
+                    android:padding="10dip"
+                    android:textStyle="bold"/>
+		  <!-- Save button -->	
+		   <RelativeLayout		  	
+			  	android:layout_width="fill_parent"
+			 	android:layout_height="wrap_content"
+			  	android:padding="10dip"
+			  	android:layout_gravity="center_horizontal">
+			  		  
+				  <Button android:text="Save" 
+				      android:id="@+id/btnsave" 
+				      android:layout_marginTop="10dip"
+				      
+				      android:layout_height="wrap_content"
+				      android:layout_width="150dip"
+				      android:background="@drawable/buttonyellow" 
+				      android:layout_alignParentRight="true"		     
+				      style="@style/Buttondual">		     
+				  </Button>	  
+				  
+				  <Button android:text="Rest" 
+				      android:id="@+id/btnreset" 
+				      android:layout_alignParentLeft="true"
+				      android:layout_marginTop="10dip"
+				      android:layout_height="wrap_content"
+				      android:layout_width="150dip"
+				      android:background="@drawable/buttonred" 
+				      style="@style/Buttondual">		     
+				  </Button>
+			  
+			</RelativeLayout>
+		    
+		</LinearLayout>
+	
+  		
+  </LinearLayout>
+</ScrollView>

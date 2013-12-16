@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dataware.medsurveillance"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.dataware.medsurveillance.LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.dataware.medsurveillance.HomeActivity"
+            android:label="Desktop" >
+        </activity>
+        <activity
+            android:name="com.dataware.medsurveillance.DemographicActivity"
+            android:label="Demographic Profile" >
+        </activity>
+        <activity
+            android:name="com.dataware.medsurveillance.PersonalInfoActivity"
+            android:label="Personal Info" >
+        </activity>
+               <activity
+            android:name="com.dataware.medsurveillance.AnthropometricActivity"
+            android:label="Anthropometric Info" >
+        </activity>
+        <activity
+            android:name="com.dataware.medsurveillance.GobiActivity"
+            android:label="Gobi-FFF" >
+        </activity>
+        <activity
+            android:name="com.dataware.medsurveillance.HastActivity"
+            android:label="HAST Info" >
+        </activity>
+        <activity
+            android:name="com.dataware.medsurveillance.PmtctActivity"
+            android:label="Pmtct Info" >
+        </activity>
+        <activity
+            android:name="com.dataware.medsurveillance.ListDemographicActivity"
+            android:label="Families" >
+        </activity>
+        <activity
+            android:name="com.dataware.medsurveillance.ListPersonsActivity"
+            android:label="Members" >
+        </activity>
+        <activity
+            android:name="com.dataware.medsurveillance.ListPersonsFormsActivity"
+            android:label="Forms" >
+        </activity>
+        
+        <activity
+            android:name="com.dataware.medsurveillance.MapFragmentActivity"
+            android:label="Map" >
+        </activity>
+        <activity
+            android:name="com.dataware.medsurveillance.MapNavigateActivity"
+            android:label="Navigation" >
+        </activity>
+        <activity
+            android:name="com.dataware.medsurveillance.ViewMedicalServicesActivity"
+            android:label="Medical Services" >
+        </activity>
+        <activity
+            android:name="com.dataware.medsurveillance.ListRegionsActivity"
+            android:label="Regions" >
+        </activity>
+        <activity
+            android:name="com.dataware.medsurveillance.HomeCoordinatesActivity"
+            android:label="Homes" >
+        </activity>
+        
+        <meta-data
+	    	android:name="com.google.android.maps.v2.API_KEY"
+	    	android:value="AIzaSyDoy6PlTLLddnbbASI079wHDfSECAWWuRM"/> 
+    </application>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    
+    <permission
+          android:name="com.dataware.medsurveillance.permission.MAPS_RECEIVE"
+          android:protectionLevel="signature"/>
+    <uses-permission android:name="com.dataware.medsurveillance.permission.MAPS_RECEIVE"/>
+    <uses-feature
+		  android:glEsVersion="0x00020000"
+		  android:required="true"/>
+</manifest>

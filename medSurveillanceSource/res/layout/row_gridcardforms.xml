@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_background_white"
+    android:orientation="horizontal"
+    android:padding="16dp" >
+    
+    
+	<LinearLayout android:id="@+id/thumbnail" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:padding="3dip"		
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical"
+        android:background="@drawable/image_bg" 
+	    android:layout_marginRight="5dip">
+        
+		<ImageView     
+			android:id="@+id/list_image"   
+	        android:layout_width="50dip"
+	        android:gravity="center_vertical"
+	        android:layout_height="50dip"
+	        android:src="@drawable/ic_forms"/>
+        
+	</LinearLayout>
+
+	
+	
+    <com.dataware.medsurveillance.includes.RobotoTextView
+	    app:typeface="roboto_condensed_bold"					
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:text="title"
+        android:textColor="#292421" 
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/thumbnail"/>
+
+
+
+	      
+     <!-- Rightend Arrow -->    
+     <ImageView android:layout_width="wrap_content"
+        android:id="@+id/sync_image"   
+     	android:layout_height="wrap_content"
+     	android:src="@drawable/arrow"
+     	android:layout_alignParentRight="true"
+     	android:layout_centerVertical="true"/>
+
+</RelativeLayout>

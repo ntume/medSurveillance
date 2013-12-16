@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/db1_root"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+   
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:padding="6dip"
+    android:background="#ffffff">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <Button android:id="@+id/home_btn_feature1"
+            style="@style/HomeButton"
+            android:onClick="onClickFeature"
+            android:text="Start Surveillance"
+            android:textColor="#101360"
+            android:drawableTop="@drawable/icon_surveillance"/>
+        <Button android:id="@+id/home_btn_feature2"
+            style="@style/HomeButton"
+            android:onClick="onClickFeature"
+            android:text="Directions"
+            android:textColor="#101360"
+            android:drawableTop="@drawable/icon_map"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <Button android:id="@+id/home_btn_feature5"
+            style="@style/HomeButton"
+            android:onClick="onClickFeature"
+            android:text="Archives"
+            android:textColor="#101360"
+            android:drawableTop="@drawable/icon_completed"/>
+        <Button android:id="@+id/home_btn_feature6"
+            style="@style/HomeButton"
+            android:onClick="onClickFeature"
+            android:text="Medical Facilities"
+            android:textColor="#101360"
+            android:drawableTop="@drawable/icon_ems"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+
+</RelativeLayout>

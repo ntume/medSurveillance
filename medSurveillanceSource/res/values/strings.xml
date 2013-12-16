@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">medSurveillance</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="validate_username">Please input your username</string>
+    <string name="validate_password">Please input your password</string>
+    <string name="legal">Legal Notices</string>
+	<string name="no_maps">Google Maps V2 not available!</string>
+	<string name="normal">Normal</string>
+	<string name="hybrid">Hybrid</string>
+	<string name="satellite">Satellite</string>
+	<string name="terrain">Terrain</string>
+    
+    <string-array name="arr_famtype">        
+        <item>Cohabiting</item>     
+        <item>Extended</item>  
+        <item>Nuclear</item> 
+        <item>Child Headed</item>
+        <item>Same Sex</item>
+        <item>Grand Parents</item>
+        <item>Single Parent</item>
+        <item>Other</item>
+    </string-array>
+    
+    <string-array name="arr_breadwinner">        
+        <item>Father</item>     
+        <item>Mother</item>  
+        <item>Uncle</item> 
+        <item>Aunt</item>
+        <item>Child Less Than 18</item>
+        <item>Child Greater Than 18</item>
+        <item>Grand Father</item>
+        <item>Grand Mother</item>
+        <item>None</item>
+    </string-array>
+    
+    <string-array name="arr_income">        
+        <item>0 - 800</item>
+        <item>801 - 1200</item>
+        <item>1201 - 2000</item>
+        <item>2100 - 3000</item>
+        <item>3001 - 5000</item>
+        <item>> 5001</item>       
+        <item>None</item>
+    </string-array>
+    
+    <string-array name="source_income">
+        <item>Grant</item>
+        <item>Self Employed</item>
+        <item>Pension</item>
+        <item>Salary</item>
+        <item>None</item>
+    </string-array>
+    
+    <string-array name="type_housing">
+        <item>Plastic</item>
+        <item>Mud</item>
+        <item>Shack</item>
+        <item>Brick</item>
+        <item>Cement</item>
+    </string-array>
+    
+    <string-array name="arrlanguage">
+        <item>Afrikaans</item>
+        <item>English</item>
+        <item>IsiNdebele</item>
+        <item>Xhosa</item>
+        <item>Zulu</item>
+    </string-array>
+    
+    <string-array name="stay">
+        <item>0 - 1</item>
+        <item>1 - 5</item>
+        <item>5 - 10</item>
+        <item>10 - 15</item>
+        <item>15 - 20</item>
+        <item>20 - 30</item>
+        <item> Greater than 30</item>
+    </string-array>
+    
+    <string name="employment_prompt">Employment Status</string>
+    <string-array name="employment">
+        <item>Employed</item>
+        <item>Unemployed</item>
+        <item>Pensioner</item>
+        <item>Disability Grant</item>
+    </string-array>
+    
+    <string name="caregiver_prompt">Employment Status</string>
+    <string-array name="caregiver">
+        <item>Mother</item>
+        <item>Father</item>
+        <item>Both Parents</item>
+        <item>Friend</item>
+        <item>Aunt</item>
+        <item>Uncle</item>
+        <item>Sibling</item>
+        <item>Domestic Worker</item>
+    </string-array>
+    
+    <string name="domestic_violence_prompt">Employment Status</string>
+    <string-array name="domestic_violence">
+        <item>Physical</item>
+        <item>Sexual</item>
+        <item>Verbal and Psychological</item>
+        <item>Economical</item>
+        <item>Neglect</item>
+        <item>Financial</item>
+        <item>None</item>
+    </string-array>
+    
+    <string name="bg_prompt">BG (Mmol/L)</string>
+    <string-array name="bg">
+        <item> Less than 3.8 </item>
+        <item>3.8 - 6.9</item>
+        <item>7 - 10</item>
+        <item>10 - 18</item>
+        <item>Greater than 18</item>
+    </string-array>
+    
+    <string name="hb_prompt">HB (G/dL)</string>
+    <string-array name="hb">
+        <item> Less than 6</item>
+        <item>6 - 10</item>
+        <item>Greater than 10</item>
+    </string-array>
+    
+    <string name="vct_prompt">VCT Period</string>
+    <string-array name="vct">
+        <item>0 - 6 Months</item>
+        <item>6 - 12 Months</item>
+        <item>Greater than 12 Months</item>
+        <item>None</item>
+    </string-array>
+    
+    <string name="tb_prompt">Type of TB</string>
+    <string-array name="tb">
+        <item>MDR</item>
+        <item>XDR</item>
+        <item>None</item>
+    </string-array>
+    
+    <string name="treatment_prompt">Treatment</string>
+    <string-array name="treatment">
+        <item>TB</item>
+        <item>ARV</item>
+        <item>Chronic Illness</item>
+        <item>Acute Illness</item>
+        <item>None</item>
+    </string-array>
+    
+    <string name="breast_feed_prompt">Breast Feeding</string>
+    <string-array name="breast_feed">
+        <item>Breast</item>
+        <item>Artificial</item>
+        <item>Mixed</item>
+    </string-array>
+    
+    <string name="growth_monitored_prompt">Growth Monitored</string>
+    <string-array name="growth_monitored">
+        <item>10 Centile</item>
+        <item>50 Centile</item>
+        <item>90 Centile</item>
+    </string-array>
+    
+    <string name="method_offeeding_prompt">Method of Feeding</string>
+    <string-array name="method_offeeding">
+        <item>Breast</item>
+        <item>Formula</item>
+    </string-array>
+    
+    <string name="immunised_prompt">Immunisation</string>
+    <string-array name="immunised">
+        <item>Fully Immunised 12 Months</item>
+        <item>Fully Immunised 5 Years</item>
+        <item>Fully Immunised 12 Years</item>
+        <item>None</item>
+    </string-array>
+    
+    <string name="female_educ_prompt">Education</string>
+    <string-array name="female_educ">
+        <item>Primary</item>
+        <item>Secondary</item>
+        <item>Tertiary</item>
+        <item>None</item>
+    </string-array>
+    
+    <string name="gender_prompt">Gender</string>
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    
+    <string-array name="option">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+</resources>

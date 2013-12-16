@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_background_white"
+    android:orientation="horizontal"
+    android:padding="16dp" >
+    
+	
+    <com.dataware.medsurveillance.includes.RobotoTextView
+	    app:typeface="roboto_condensed_bold"					
+        android:id="@+id/homenumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:text="title"
+        android:textColor="#292421" 
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/thumbnail"/>
+
+
+    <com.dataware.medsurveillance.includes.RobotoTextView
+	    app:typeface="roboto_condensed"					
+        android:id="@+id/address"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/homenumber"
+        android:textColor="#101360"
+        android:textSize="17sp"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="10dip"       
+        android:text="subtitle"
+        android:layout_toRightOf="@+id/thumbnail" />
+    
+    	      
+     <!-- Rightend Arrow -->    
+     <ImageView android:layout_width="wrap_content"
+        android:id="@+id/sync_image"   
+     	android:layout_height="wrap_content"
+     	android:src="@drawable/arrow"
+     	android:layout_alignParentRight="true"
+     	android:layout_centerVertical="true"/>
+
+</RelativeLayout>

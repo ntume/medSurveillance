@@ -1,0 +1,37 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    
+    <item
+        android:id="@+id/action_more"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/ic_more2">
+        <menu>
+            <item
+		        android:id="@+id/addhast"
+		        android:orderInCategory="100"
+		        android:showAsAction="never"
+		        android:title="Add HAST Services"/>
+		    
+		    <item
+		        android:id="@+id/addgobi"
+		        android:orderInCategory="100"
+		        android:showAsAction="never"
+		        android:title="Add GOBI-FFF "/>
+		    
+		    <item
+		        android:id="@+id/addanthro"
+		        android:orderInCategory="100"
+		        android:showAsAction="never"
+		        android:title="Add Anthropometric Measurements"/>
+		    
+		    <item
+		        android:id="@+id/addreferral"
+		        android:orderInCategory="100"
+		        android:showAsAction="never"
+		        android:title="Add Referral"/>		    
+		    
+        </menu>
+    </item>
+    
+</menu>

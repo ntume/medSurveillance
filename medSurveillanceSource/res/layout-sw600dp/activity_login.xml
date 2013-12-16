@@ -1,0 +1,144 @@
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:validateform="http://schemas.android.com/apk/res/com.dataware.medsurveillance"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:fillViewport="true"
+  android:background="#ffffff">
+  <RelativeLayout 
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:id="@+id/LoginRootView">
+    
+    
+
+    <!-- Login Form -->
+		<LinearLayout
+		  android:orientation="vertical"
+		  android:layout_width="match_parent"
+		  android:layout_height="wrap_content"
+		  android:padding="10dip">
+		  
+		  <ImageView            
+            android:layout_width="250dip"
+            android:layout_height="250dip"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/colab" />
+
+		  <com.dataware.medsurveillance.includes.RobotoTextView
+        	  app:typeface="roboto_condensed_bold"
+		      android:layout_width="wrap_content"
+		      android:layout_height="wrap_content"
+		      android:paddingBottom="20dip"
+		      android:paddingTop="1dip"
+		      android:text="PLEASE LOGIN TO PROCEED"
+		      android:textSize="20sp"
+		      android:layout_gravity="center_horizontal"		     
+		      android:textColor="#53933f"/>
+		  
+		  <LinearLayout		  	
+			  	android:layout_width="fill_parent"
+			 	android:layout_height="wrap_content"
+			  	android:padding="5dip"
+			  	android:layout_gravity="center_horizontal"
+			  	android:orientation="horizontal"
+			  	android:weightSum="1.0" >
+			  	
+		      	   <com.dataware.medsurveillance.includes.RobotoTextView
+				        app:typeface="roboto_condensed"
+				        android:layout_width="0dp"
+				        android:paddingTop="20dip"
+				        android:layout_weight=".30"
+				        android:layout_alignParentLeft="true"
+				  		android:layout_height="wrap_content"
+				  		android:textColor="#53933f"				  		
+				  		android:textSize="18sp"		  		
+				  		android:text="Username"/>
+		      	   
+		      	   <com.andreabaccega.widget.FormEditText
+				      android:id="@+id/loginEmail"
+				      android:layout_width="0dp"
+				      android:layout_weight=".70"
+				      android:layout_alignParentRight="true"
+				      android:layout_height="wrap_content"
+				      android:layout_marginBottom="20dip"
+				      android:layout_marginTop="5dip"
+				      android:ems="10"
+				      android:hint="Username"
+				      android:singleLine="true"
+				      android:text="mark"
+				      android:textColor="#000000"
+				      validateform:emptyErrorString="@string/validate_username"
+				      validateform:testType="nocheck">
+		
+				      <requestFocus />
+				  </com.andreabaccega.widget.FormEditText>
+				   
+		 </LinearLayout>
+		  
+		  <!--  Password Label -->
+		  <LinearLayout		  	
+			  	android:layout_width="fill_parent"
+			 	android:layout_height="wrap_content"
+			  	android:padding="5dip"
+			  	android:layout_gravity="center_horizontal"
+			  	android:orientation="horizontal"
+			  	android:weightSum="1.0" >
+			  	
+		      	   <com.dataware.medsurveillance.includes.RobotoTextView
+				        app:typeface="roboto_condensed"
+				        android:layout_width="0dp"
+				        android:paddingTop="20dip"
+				        android:layout_weight=".30"
+				  		android:layout_height="wrap_content"
+				  		android:textColor="#53933f"
+				  		android:layout_alignParentLeft="true"
+				  		android:textSize="18sp"		  		
+				  		android:text="Password"/>
+		      	   
+		      	   <com.andreabaccega.widget.FormEditText
+				      android:id="@+id/loginPassword"
+				      android:layout_width="0dp"
+				      android:layout_weight=".70"
+				      android:layout_height="wrap_content"
+				      android:layout_marginBottom="20dip"
+				      android:layout_marginTop="5dip"
+				      android:ems="10"
+				      android:hint="Username"
+				      android:singleLine="true"
+				      android:password="true"
+		  		      android:text="1234"
+				      android:textColor="#000000"
+				      validateform:emptyErrorString="@string/validate_password"
+				      validateform:testType="nocheck" 
+				      android:layout_alignParentRight="true">
+		
+				      <requestFocus />
+				  </com.andreabaccega.widget.FormEditText>
+				   
+		 </LinearLayout>
+		  
+		  <!--  Error message -->
+          <com.dataware.medsurveillance.includes.RobotoTextView
+		            app:typeface="roboto_condensed" 
+		            android:id="@+id/login_error"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#e30000"
+                    android:padding="10dip"
+                    android:textStyle="bold"/>
+		  <!-- Login button -->	
+		  		  
+		  <Button android:text="Login" 
+		      android:id="@+id/btnLogin" 
+		      android:layout_marginTop="10dip"
+		      android:layout_height="wrap_content"
+		      android:background="@drawable/buttongreen" 
+		      style="@style/ButtonText"></Button>			  
+		
+		</LinearLayout>
+  		<!-- Login Form Ends --> 
+
+</RelativeLayout>
+</ScrollView>
